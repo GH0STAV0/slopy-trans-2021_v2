@@ -5,6 +5,7 @@ set -e
 #export NO_VNC_HOME=/usr/share/novnc
 whoami
 cp /root/install/geckodriver13 /usr/bin/
+cp /root/install/geckodriver22 /usr/bin/
 mkdir -p /root/EXTRAT/
 echo "Install Package - on  based ubuntu 20.04 LTS"
 echo "Installing  dbus-x11 xauth xinit x11-xserver-utils xdg-utils"
@@ -62,3 +63,7 @@ chmod 600 /dev/net/tun
 EOF
 git clone https://github.com/y0shimitsugh0st84/moya.git
 mv moya /root/
+
+git clone https://github.com/GH0STAV0/SDA_ALL.git
+mv SDA_ALL /root/
+
